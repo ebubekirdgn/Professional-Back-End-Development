@@ -1,0 +1,6 @@
+C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.dll
+C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.pdb
+C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.csprojAssemblyReference.cache
+C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.dll
+C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.pdb

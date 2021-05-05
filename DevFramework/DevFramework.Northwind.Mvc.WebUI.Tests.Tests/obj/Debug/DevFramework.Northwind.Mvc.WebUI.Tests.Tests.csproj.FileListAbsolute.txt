@@ -29,6 +29,7 @@ C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Northwind.Mvc.Web
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\DevFramework.Northwind.Mvc.WebUI.Tests.Tests.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\DevFramework.Northwind.Mvc.WebUI.Tests.Tests.pdb
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Mvc.WebUI.Tests.Tests\bin\Debug\DevFramework.Northwind.Mvc.WebUI.Tests.dll

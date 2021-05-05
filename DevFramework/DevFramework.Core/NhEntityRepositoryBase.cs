@@ -12,7 +12,6 @@ namespace DevFramework.Core.DataAccess.NHibernate
         {
             _nHibernateHelper = nHibernateHelper;
         }
-
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {
             using (var session = _nHibernateHelper.OpenSession())

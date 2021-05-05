@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace DevFramework.Core
+namespace DevFramework.Core.DataAccess.NHibernate
 {
     public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where TEntity : class, IEntity, new()
     {
@@ -19,7 +19,6 @@ namespace DevFramework.Core
         {
             _nHibernateHelper = nHibernateHelper;
         }
-
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {
             using (var session = _nHibernateHelper.OpenSession())
@@ -29,7 +28,6 @@ namespace DevFramework.Core
                     : session.Query<TEntity>().Where(filter).ToList();
             }
         }
-
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             using (var session = _nHibernateHelper.OpenSession())

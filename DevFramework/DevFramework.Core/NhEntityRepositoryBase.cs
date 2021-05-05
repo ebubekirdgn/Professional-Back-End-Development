@@ -6,9 +6,9 @@ using System.Linq.Expressions;
 
 namespace DevFramework.Core.DataAccess.NHibernate
 {
-    public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where TEntity : class, IEntity, new()
     {
-        private NHibernateHelper _nHibernateHelper;
+        private NHibernateHelper _nHibernateHelper;    public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where TEntity : class, IEntity, new()
+  
 
         public NhEntityRepositoryBase(NHibernateHelper nHibernateHelper)
         {

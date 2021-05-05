@@ -105,11 +105,6 @@
             the entity instance or returned to the client.
             </remarks>
         </member>
-        <member name="P:NHibernate.Action.DelayedPostInsertIdentifier.ActualId">
-            <summary>
-            The actual identifier value that has been generated.
-            </summary>
-        </member>
         <member name="T:NHibernate.Action.EntityAction">
             <summary>
             Base class for actions relating to insert/update/delete of an entity

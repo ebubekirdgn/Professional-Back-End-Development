@@ -10,8 +10,8 @@ namespace DevFramework.Northwind.DataAccess.Concrete.NHibernate.Helpers
     {
         protected override ISessionFactory InitializeFactory()
         {
-            return Fluently.Configure().Database(MsSqlConfiguration.MsSql2012
-                .ConnectionString(c => c.FromConnectionStringWithKey("NorthwinContext")))
+            return Fluently.Configure().Database(MsSqlConfiguration.MsSql7
+                .ConnectionString(c => c.FromConnectionStringWithKey("NorthwindContext")))
                 .Mappings(t => t.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly())).BuildSessionFactory();
         }
     }

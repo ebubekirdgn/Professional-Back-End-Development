@@ -1,15 +1,11 @@
 ﻿using NHibernate;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DevFramework.Core.DataAccess.NHibernate
 {
     public abstract class NHibernateHelper : IDisposable
     {
-        static ISessionFactory _sessionFactor;
+        private static ISessionFactory _sessionFactor;
 
         public virtual ISessionFactory SessionFactory
         {
@@ -22,6 +18,7 @@ namespace DevFramework.Core.DataAccess.NHibernate
         {
             return SessionFactory.OpenSession();
         }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);

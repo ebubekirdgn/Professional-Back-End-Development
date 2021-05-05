@@ -21,7 +21,6 @@ namespace DevFramework.Core.DataAccess.NHibernate
                     : session.Query<TEntity>().Where(filter).ToList();
             }
         }
-
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             using (var session = _nHibernateHelper.OpenSession())

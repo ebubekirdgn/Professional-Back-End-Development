@@ -12,3 +12,17 @@ C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.DataAccess.Tests\
 C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.csproj.CopyComplete
 C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.dll
 C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\DevFramework.DataAccess.Tests.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\DevFramework.DataAccess.Tests.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.csprojAssemblyReference.cache
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.csproj.CopyComplete
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.pdb

@@ -45,7 +45,6 @@ namespace DevFramework.Core.DataAccess.NHibernate
                 session.Delete(entity);
             }
         }
-
         public TEntity Update(TEntity entity)
         {
             using (var session = _nHibernateHelper.OpenSession())

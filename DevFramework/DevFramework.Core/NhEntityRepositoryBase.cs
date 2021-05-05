@@ -8,8 +8,6 @@ namespace DevFramework.Core.DataAccess.NHibernate
 {
     {
         private NHibernateHelper _nHibernateHelper;    public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where TEntity : class, IEntity, new()
-  
-
         public NhEntityRepositoryBase(NHibernateHelper nHibernateHelper)
         {
             _nHibernateHelper = nHibernateHelper;

@@ -11,3 +11,16 @@ C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Northwind.DataAcc
 C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.dll
 C:\Users\Ebubekir Dogan\source\repos\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\bin\Debug\DevFramework.Northwind.DataAccess.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\bin\Debug\DevFramework.Northwind.DataAccess.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.csprojAssemblyReference.cache
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess_MarkupCompile.cache
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess_MarkupCompile.lref
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\Themes\Generic.baml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.g.resources
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.Properties.Resources.resources
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.csproj.GenerateResource.cache
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.DataAccess\obj\Debug\DevFramework.Northwind.DataAccess.pdb

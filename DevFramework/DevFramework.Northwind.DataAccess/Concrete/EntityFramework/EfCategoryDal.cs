@@ -4,7 +4,7 @@ using DevFramework.Northwind.Entities.Concrete;
 
 namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
 {
-    public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
+    public class EfCategoryDal : EfEntityRepositoryBase<Category, NorthwindContext>, ICategoryDal
     {
     }
 }

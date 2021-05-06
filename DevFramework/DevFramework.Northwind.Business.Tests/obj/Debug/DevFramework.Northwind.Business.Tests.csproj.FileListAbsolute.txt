@@ -22,6 +22,7 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.csprojAssemblyReference.cache
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.csproj.CopyComplete
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.dll

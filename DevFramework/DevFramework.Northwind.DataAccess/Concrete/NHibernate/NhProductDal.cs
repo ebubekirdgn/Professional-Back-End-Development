@@ -16,7 +16,7 @@ namespace DevFramework.Northwind.DataAccess.Concrete.NHibernate
         public List<ProductDetail> GetProductDetails()
         {
             using (var session = _nhibernateHelper.OpenSession())
-            {
+            { 
                 var result = from p in session.Query<Product>()
                              join c in session.Query<Category>() on p.CategoryId equals c.CategoryId
                              select new ProductDetail

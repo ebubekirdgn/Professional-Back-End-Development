@@ -26,3 +26,9 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.csproj.CopyComplete
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\bin\Debug\FluentValidation.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\bin\Debug\PostSharp.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\bin\Debug\FluentValidation.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\bin\Debug\PostSharp.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\bin\Debug\DevFramework.Core.pssym
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Core\obj\Debug\DevFramework.Core.dll.postsharp

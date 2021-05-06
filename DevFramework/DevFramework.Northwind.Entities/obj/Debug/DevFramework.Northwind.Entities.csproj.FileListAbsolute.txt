@@ -26,3 +26,7 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\obj\Debug\DevFramework.Northwind.Entities.csproj.CopyComplete
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\obj\Debug\DevFramework.Northwind.Entities.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\obj\Debug\DevFramework.Northwind.Entities.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\bin\Debug\FluentValidation.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\bin\Debug\PostSharp.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\bin\Debug\FluentValidation.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Entities\bin\Debug\PostSharp.xml

@@ -36,3 +36,7 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\bin\Debug\Antlr3.Runtime.xml
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\bin\Debug\Iesi.Collections.xml
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\obj\Debug\DevFramework.Northwind.Business.csproj.CopyComplete
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\bin\Debug\PostSharp.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\bin\Debug\PostSharp.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\bin\Debug\DevFramework.Northwind.Business.pssym
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business\obj\Debug\DevFramework.Northwind.Business.dll.postsharp

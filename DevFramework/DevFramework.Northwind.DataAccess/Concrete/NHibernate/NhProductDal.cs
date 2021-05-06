@@ -10,7 +10,6 @@ namespace DevFramework.Northwind.DataAccess.Concrete.NHibernate
     public class NhProductDal : NhEntityRepositoryBase<Product>, IProductDal
     {
         private NHibernateHelper _nhibernateHelper;
-
         public NhProductDal(NHibernateHelper nHibernateHelper) : base(nHibernateHelper)
         {
         }

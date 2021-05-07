@@ -82,7 +82,7 @@
     <Compile Include="DataAccess\EntityFramework\EfEntityRepositoryBase.cs" />
     <Compile Include="DataAccess\EntityFramework\EfQueryableRepository.cs" />
     <Compile Include="DataAccess\IEntityRepository.cs" />
-    <Compile Include="DataAccess\IQueryableRepository.cs" />
+    <Compile Include="Entities\IQueryableRepository.cs" />
     <Compile Include="DataAccess\NHibernate\NHibernateHelper.cs" />
     <Compile Include="DataAccess\NHibernate\NhQueryableRepository.cs" />
     <Compile Include="Entities\IEntity.cs" />

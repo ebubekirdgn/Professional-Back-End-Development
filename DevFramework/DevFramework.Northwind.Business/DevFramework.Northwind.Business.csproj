@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Concrete\Managers\ProductManager.cs" />
+    <Compile Include="DependencyResolves\Ninject\BusinessModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationRules\FluentValidation\ProductValidator.cs" />
   </ItemGroup>

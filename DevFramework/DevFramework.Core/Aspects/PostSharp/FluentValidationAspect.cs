@@ -24,7 +24,7 @@ namespace DevFramework.Core.Aspects.PostSharp
 
             foreach (var entity in entities)
             {
-                ValidatorTool.FluentValidate(validator,entity);
+                ValidatorTool.FluentValidate(validator, entity);
             }
         }
     }

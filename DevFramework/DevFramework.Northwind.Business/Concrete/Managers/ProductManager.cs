@@ -1,4 +1,5 @@
 ﻿using DevFramework.Core.Aspects.PostSharp;
+using DevFramework.Core.Aspects.PostSharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
 using DevFramework.Core.DataAccess;
 using DevFramework.Northwind.Business.Abstract;
@@ -25,6 +26,8 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
             return _productDal.Add(product);
         }
 
+
+        [CacheAspect()]
         public List<Product> GetAll()
         {
             return _productDal.GetList();

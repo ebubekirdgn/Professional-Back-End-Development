@@ -3,7 +3,6 @@ using System.Linq;
 using System.Runtime.Caching;
 using System.Text.RegularExpressions;
 
-
 namespace DevFramework.Core.CrossCuttingConcerns.Caching.Microsoft
 {
     public class MemoryCacheManager : ICacheManager
@@ -48,7 +47,6 @@ namespace DevFramework.Core.CrossCuttingConcerns.Caching.Microsoft
             {
                 Remove(key);
             }
-        
         }
 
         public void Remove(string key)

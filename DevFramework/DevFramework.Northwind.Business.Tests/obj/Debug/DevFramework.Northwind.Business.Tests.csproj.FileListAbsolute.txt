@@ -68,3 +68,4 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\Iesi.Collections.xml
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\Ninject.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\Ninject.xml
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\DevFramework.Northwind.Business.dll.config

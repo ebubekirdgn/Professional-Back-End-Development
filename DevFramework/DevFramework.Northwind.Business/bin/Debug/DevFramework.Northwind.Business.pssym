@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Symbols LinesOfCode="44" PostSharpLinesOfCode="0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[DevFramework.Core]DevFramework.Core.Aspects.PostSharp.ValidationAspects.FluentValidationAspect">
-    <Instance Declaration="#2=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Add(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7dace05c37">
+    <Instance Declaration="#2=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Add(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7de31e58d8">
       <Target>
         <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" Ordinal="0" />
       </Target>
     </Instance>
-    <Instance Declaration="#4=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Update(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7d4ef8ada9">
+    <Instance Declaration="#4=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Update(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7deacd7595">
       <Target>
         <JoinPoint Advising="#1" Description="#3" Ordinal="2" />
       </Target>
     </Instance>
   </Class>
   <Class Class="#5=T:[DevFramework.Core]DevFramework.Core.Aspects.PostSharp.TransactionScopeAspect">
-    <Instance Declaration="#6=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::TransactionalOperation(DevFramework.Northwind.Entities.Concrete.Product, DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7d18d1202d">
+    <Instance Declaration="#6=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::TransactionalOperation(DevFramework.Northwind.Entities.Concrete.Product, DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7d864090c1">
       <Target>
         <JoinPoint Advising="#5" Description="#3" Ordinal="3" />
       </Target>
     </Instance>
   </Class>
   <Class Class="#7=T:[DevFramework.Core]DevFramework.Core.Aspects.PostSharp.CacheAspects.CacheAspect">
-    <Instance Declaration="#8=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::GetAll()" Id="5ffabd7dc7ca78cd">
+    <Instance Declaration="#8=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::GetAll()" Id="5ffabd7d1b724710">
       <Target>
         <JoinPoint Advising="#7" Description="#9=Intercepted by OnInvoke" />
       </Target>

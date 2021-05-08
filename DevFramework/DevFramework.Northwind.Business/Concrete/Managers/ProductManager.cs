@@ -22,11 +22,12 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect(typeof(MemoryCacheManager))]
+        // Sepetten ürün ekleme silme işlemleri gibi yerlerde gecerlidir.
         public Product Add(Product product)
         {
             return _productDal.Add(product);
         }
-
 
         [CacheAspect(typeof(MemoryCacheManager))]
         public List<Product> GetAll()

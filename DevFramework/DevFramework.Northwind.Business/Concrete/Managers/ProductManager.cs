@@ -39,7 +39,7 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
         {
             return _productDal.Get(p => p.ProductId == id);
         }
-
+         
         [FluentValidationAspect(typeof(ProductValidator))]
         public Product Update(Product product)
         {

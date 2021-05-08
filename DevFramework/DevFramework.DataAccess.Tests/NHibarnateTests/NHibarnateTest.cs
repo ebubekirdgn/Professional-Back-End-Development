@@ -1,7 +1,6 @@
 ﻿using DevFramework.Northwind.DataAccess.Concrete.NHibernate;
 using DevFramework.Northwind.DataAccess.Concrete.NHibernate.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace DevFramework.DataAccess.Tests.NHibarnateTests
 {
@@ -16,7 +15,6 @@ namespace DevFramework.DataAccess.Tests.NHibarnateTests
 
             Assert.AreEqual(77, result.Count);
         }
-
 
         [TestMethod]
         public void Get_all_with_parameter_returns_filtered_products()

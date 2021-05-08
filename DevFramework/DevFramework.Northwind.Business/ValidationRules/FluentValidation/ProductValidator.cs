@@ -16,9 +16,9 @@ namespace DevFramework.Northwind.Business.ValidationRules.FluentValidation
             //RuleFor(p => p.ProductName).Must(StartWithA);
         }
 
-         private bool StartWithA(string arg)
-         {
-             return arg.StartsWith("A");
-         }
+        private bool StartWithA(string arg)
+        {
+            return arg.StartsWith("A");
+        }
     }
 }

@@ -1,9 +1,7 @@
-﻿
-
-using DevFramework.Core.DataAccess.EntityFramework;
+﻿using DevFramework.Core.DataAccess.EntityFramework;
 using DevFramework.Northwind.DataAccess.Abstract;
-using DevFramework.Northwind.Entities.Concrete;
 using DevFramework.Northwind.Entities.ComplexTypes;
+using DevFramework.Northwind.Entities.Concrete;
 using System.Collections.Generic;
 using System.Linq;
 

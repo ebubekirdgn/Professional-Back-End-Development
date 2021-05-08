@@ -9,10 +9,12 @@ namespace DevFramework.Core.DataAccess.NHibernate
     public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where TEntity : class, IEntity, new()
     {
         private NHibernateHelper _nHibernateHelper;
+
         public NhEntityRepositoryBase(NHibernateHelper nHibernateHelper)
         {
             _nHibernateHelper = nHibernateHelper;
         }
+
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {
             using (var session = _nHibernateHelper.OpenSession())
@@ -22,6 +24,7 @@ namespace DevFramework.Core.DataAccess.NHibernate
                     : session.Query<TEntity>().Where(filter).ToList();
             }
         }
+
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
             using (var session = _nHibernateHelper.OpenSession())
@@ -29,6 +32,7 @@ namespace DevFramework.Core.DataAccess.NHibernate
                 return session.Query<TEntity>().SingleOrDefault();
             }
         }
+
         public TEntity Add(TEntity entity)
         {
             using (var session = _nHibernateHelper.OpenSession())
@@ -45,6 +49,7 @@ namespace DevFramework.Core.DataAccess.NHibernate
                 session.Delete(entity);
             }
         }
+
         public TEntity Update(TEntity entity)
         {
             using (var session = _nHibernateHelper.OpenSession())

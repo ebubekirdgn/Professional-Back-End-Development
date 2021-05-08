@@ -12,7 +12,7 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
         }
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories{ get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

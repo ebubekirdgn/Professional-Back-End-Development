@@ -43,3 +43,5 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.csproj.CopyComplete
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\obj\Debug\DevFramework.DataAccess.Tests.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\log4net.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.DataAccess.Tests\bin\Debug\log4net.xml

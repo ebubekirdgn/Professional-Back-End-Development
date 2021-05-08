@@ -69,3 +69,5 @@ C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.dll.postsharp
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.dll
 C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\obj\Debug\DevFramework.Northwind.Business.Tests.pdb
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\log4net.dll
+C:\Users\Ebubekir Dogan\Documents\Professional-Back-End-Development\DevFramework\DevFramework.Northwind.Business.Tests\bin\Debug\log4net.xml

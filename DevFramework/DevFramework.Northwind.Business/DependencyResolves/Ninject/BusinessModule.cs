@@ -22,7 +22,6 @@ namespace DevFramework.Northwind.Business.DependencyResolves.Ninject
             Bind(typeof(IQueryableRepository<>)).To(typeof(EfQueryableRepository<>));
             Bind<DbContext>().To<NorthwindContext>();
             Bind<NHibernateHelper>().To<SqlServerHelper>();
-
         }
     }
 }

@@ -40,6 +40,5 @@ namespace DevFramework.Core.Aspects.PostSharp.CacheAspects
                 ? string.Format("{0}.{1}.*", args.Method.ReflectedType.Namespace, args.Method.ReflectedType.Name)
                 : _pattern);
         }
-
     }
 }

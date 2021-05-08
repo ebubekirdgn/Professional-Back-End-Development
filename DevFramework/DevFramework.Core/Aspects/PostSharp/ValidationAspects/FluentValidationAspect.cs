@@ -4,7 +4,7 @@ using PostSharp.Aspects;
 using System;
 using System.Linq;
 
-namespace DevFramework.Core.Aspects.PostSharp
+namespace DevFramework.Core.Aspects.PostSharp.ValidationAspects
 {
     [Serializable]
     public class FluentValidationAspect : OnMethodBoundaryAspect

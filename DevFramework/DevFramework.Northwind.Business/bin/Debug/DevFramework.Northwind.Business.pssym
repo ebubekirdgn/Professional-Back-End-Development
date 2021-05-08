@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="29" PostSharpLinesOfCode="0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+<Symbols LinesOfCode="34" PostSharpLinesOfCode="0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[DevFramework.Core]DevFramework.Core.Aspects.PostSharp.FluentValidationAspect">
-    <Instance Declaration="#2=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Add(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7de0b80fb0">
+    <Instance Declaration="#2=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Add(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7d21497f6c">
       <Target>
         <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" Ordinal="0" />
       </Target>
     </Instance>
-    <Instance Declaration="#4=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Update(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7dc6c81f71">
+    <Instance Declaration="#4=M:[DevFramework.Northwind.Business]DevFramework.Northwind.Business.Concrete.Managers.ProductManager::Update(DevFramework.Northwind.Entities.Concrete.Product)" Id="5ffabd7df9a099c1">
       <Target>
         <JoinPoint Advising="#1" Description="#3" />
       </Target>

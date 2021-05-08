@@ -1,4 +1,6 @@
 ﻿using DevFramework.Core.Aspects.PostSharp;
+using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
+using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
 using DevFramework.Core.DataAccess;
 using DevFramework.Northwind.Business.Abstract;
 using DevFramework.Northwind.Business.ValidationRules.FluentValidation;
@@ -13,10 +15,9 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
         private IProductDal _productDal;
         private readonly IQueryableRepository<Product> _queryable;
 
-        public ProductManager(IProductDal productDal, IQueryableRepository<Product> queryable)
+        public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
-            _queryable = queryable;
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
@@ -39,6 +40,14 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
         public Product Update(Product product)
         {
             return _productDal.Update(product);
+        }
+
+        [TransactionScopeAspect]
+        public void TransactionalOperation(Product product1, Product product2)
+        {
+            _productDal.Add(product1);
+            //Business code
+            _productDal.Update(product1);
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using DevFramework.Core.Aspects.PostSharp;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
-using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
 using DevFramework.Core.DataAccess;
 using DevFramework.Northwind.Business.Abstract;
 using DevFramework.Northwind.Business.ValidationRules.FluentValidation;

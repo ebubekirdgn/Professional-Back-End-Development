@@ -1,6 +1,7 @@
 ﻿using DevFramework.Core.Aspects.PostSharp;
 using DevFramework.Core.Aspects.PostSharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
+using DevFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
 using DevFramework.Core.DataAccess;
 using DevFramework.Northwind.Business.Abstract;
 using DevFramework.Northwind.Business.ValidationRules.FluentValidation;
@@ -27,7 +28,7 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
         }
 
 
-        [CacheAspect()]
+        [CacheAspect(typeof(MemoryCacheManager))]
         public List<Product> GetAll()
         {
             return _productDal.GetList();

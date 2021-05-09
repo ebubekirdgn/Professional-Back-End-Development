@@ -3,7 +3,7 @@ using PostSharp.Aspects;
 using System;
 using System.Reflection;
 
-namespace DevFramework.Core.Aspects.PostSharp.CacheAspects
+namespace DevFramework.Core.Aspects.Postsharp.CacheAspects
 {
     [Serializable]
     public class CacheRemoveAspect : OnMethodBoundaryAspect
@@ -25,7 +25,7 @@ namespace DevFramework.Core.Aspects.PostSharp.CacheAspects
 
         public override void RuntimeInitialize(MethodBase method)
         {
-            if (typeof(ICacheManager).IsAssignableFrom(_cacheType))
+            if (typeof(ICacheManager).IsAssignableFrom(_cacheType) == false)
             {
                 throw new Exception("Wrong Cache Manager");
             }
@@ -36,9 +36,7 @@ namespace DevFramework.Core.Aspects.PostSharp.CacheAspects
 
         public override void OnSuccess(MethodExecutionArgs args)
         {
-            _cacheManager.RemoveByPattern(string.IsNullOrEmpty(_pattern)
-                ? string.Format("{0}.{1}.*", args.Method.ReflectedType.Namespace, args.Method.ReflectedType.Name)
-                : _pattern);
+            _cacheManager.RemoveByPattern(string.IsNullOrEmpty(_pattern) ? string.Format("{0}.{1}.*", args.Method.ReflectedType.Namespace, args.Method.ReflectedType.Name) : _pattern);
         }
     }
 }

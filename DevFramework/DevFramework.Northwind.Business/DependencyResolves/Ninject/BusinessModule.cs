@@ -2,7 +2,7 @@
 using DevFramework.Core.DataAccess.EntityFramework;
 using DevFramework.Core.DataAccess.NHibernate;
 using DevFramework.Northwind.Business.Abstract;
-using DevFramework.Northwind.Business.Concrete.Managers;
+using DevFramework.Northwind.Business.Concrate.Managers;
 using DevFramework.Northwind.DataAccess.Abstract;
 using DevFramework.Northwind.DataAccess.Concrete.EntityFramework;
 using DevFramework.Northwind.DataAccess.Concrete.NHibernate.Helpers;

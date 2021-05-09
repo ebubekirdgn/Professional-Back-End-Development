@@ -21,7 +21,7 @@ namespace DevFramework.Core.Aspects.PostSharp.CacheAspects
 
         public override void RuntimeInitialize(MethodBase method)
         {
-            if (typeof(ICacheManager).IsAssignableFrom(_cacheType))
+            if (typeof(ICacheManager).IsAssignableFrom(_cacheType) == false)
             {
                 throw new Exception("Wrong Cache Manager");
             }

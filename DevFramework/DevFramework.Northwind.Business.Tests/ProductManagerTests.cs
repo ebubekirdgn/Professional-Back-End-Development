@@ -1,4 +1,4 @@
-﻿using DevFramework.Northwind.Business.Concrete.Managers;
+﻿using DevFramework.Northwind.Business.Concrate.Managers;
 using DevFramework.Northwind.DataAccess.Abstract;
 using DevFramework.Northwind.Entities.Concrete;
 using FluentValidation;

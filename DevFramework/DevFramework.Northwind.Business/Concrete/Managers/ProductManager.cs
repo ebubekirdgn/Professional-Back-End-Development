@@ -35,7 +35,7 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
            // Thread.Sleep(3000);
 
             return _productDal.GetList();
-        }
+        } 
 
         public Product GetById(int id)
         {

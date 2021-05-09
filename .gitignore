@@ -21,6 +21,9 @@ packages
 # comment the following line if you want to have your project file included.
 eagle.epf
 
+# Visual Studio 2019 cache/options directory
+.vs/
+
 # Autorouter files
 *.pro
 *.job

@@ -24,7 +24,7 @@ namespace DevFramework.Core.Aspects.PostSharp.LogAspects
             if (_loggerType.BaseType != typeof(LoggerService))
             {
                 throw new Exception("Wrong Logger Type");
-            }
+            } 
             _loggerService = (LoggerService)Activator.CreateInstance(_loggerType);
             base.RuntimeInitialize(method);
 

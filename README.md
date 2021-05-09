@@ -64,7 +64,7 @@ In this project, there are sample coding for some structures that a backend appl
 - tests: [FieldLevelAuthorizeAspectTests.cs](Shop.Core.Tests/AspectTests/Postsharp/FieldLevelAuthorizeAspectTests.cs)
 ##### Module
 
--used: [Ninject] (https://github.com/ninject/Ninject/wiki/Modules-and-the-Kernel)
+- used: [Ninject] (https://github.com/ninject/Ninject/wiki/Modules-and-the-Kernel)
 
 ##### Performance Counter
 - used: [Postsharp](https://www.postsharp.net/), [Stopwatch](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.stopwatch?view=net-5.0)

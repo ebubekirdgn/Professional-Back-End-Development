@@ -1,8 +1,10 @@
 ﻿using DevFramework.Core.Aspects.Postsharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp;
 using DevFramework.Core.Aspects.PostSharp.CacheAspects;
+using DevFramework.Core.Aspects.PostSharp.LogAspects;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
 using DevFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
+using DevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using DevFramework.Northwind.Business.Abstract;
 using DevFramework.Northwind.Business.ValidationRules.FluentValidation;
 using DevFramework.Northwind.DataAccess.Abstract;
@@ -26,6 +28,8 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         /// </summary>
         /// <returns></returns>
         [CacheAspect(typeof(MemoryCacheManager))]
+        [LogAspect(typeof(DatabaseLogger))]
+        [LogAspect(typeof(FileLogger))]
         public List<Product> GetAll()
         {
             Thread.Sleep(3000);

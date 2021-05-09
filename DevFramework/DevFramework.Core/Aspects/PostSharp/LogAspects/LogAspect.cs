@@ -15,10 +15,12 @@ namespace DevFramework.Core.Aspects.PostSharp.LogAspects
     {
         private Type _loggerType;
         private LoggerService _loggerService;
+
         public LogAspect(Type loggerType)
         {
             _loggerType = loggerType;
         }
+
         public override void RuntimeInitialize(MethodBase method)
         {
             if (_loggerType.BaseType != typeof(LoggerService))
@@ -28,6 +30,7 @@ namespace DevFramework.Core.Aspects.PostSharp.LogAspects
             _loggerService = (LoggerService)Activator.CreateInstance(_loggerType);
             base.RuntimeInitialize(method);
         }
+
         public override void OnEntry(MethodExecutionArgs args)
         {
             if (!_loggerService.IsInfoEnabled)

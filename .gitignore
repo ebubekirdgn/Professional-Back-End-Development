@@ -8,6 +8,13 @@
 *.s$?
 *.l$?
 
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+
 # Eagle project file
 # It contains a serial number and references to the file structure
 # on your computer.

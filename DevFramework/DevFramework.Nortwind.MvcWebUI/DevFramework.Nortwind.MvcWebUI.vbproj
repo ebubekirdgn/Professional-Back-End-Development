@@ -115,14 +115,12 @@
   <ItemGroup>
     <Content Include="Controllers\ProductController.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Global.asax.cs" />
     <Content Include="Models\ProductListViewModel.cs" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="Global.asax.vb">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

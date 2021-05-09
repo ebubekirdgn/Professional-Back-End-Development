@@ -1,10 +1,9 @@
 ﻿using DevFramework.Core.Aspects.Postsharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp;
 using DevFramework.Core.Aspects.PostSharp.CacheAspects;
-using DevFramework.Core.Aspects.PostSharp.LogAspects;
+using DevFramework.Core.Aspects.PostSharp.PerformanceAspects;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
 using DevFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
-using DevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using DevFramework.Northwind.Business.Abstract;
 using DevFramework.Northwind.Business.ValidationRules.FluentValidation;
 using DevFramework.Northwind.DataAccess.Abstract;
@@ -28,11 +27,12 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         /// </summary>
         /// <returns></returns>
         [CacheAspect(typeof(MemoryCacheManager))]
-        [LogAspect(typeof(DatabaseLogger))]
-        [LogAspect(typeof(FileLogger))]
+        [PerformanceCounterAspect(2)]
         public List<Product> GetAll()
         {
-            Thread.Sleep(3000);
+            //3 sn. uyutuyoruz öyle devam et dedik.Çunku methodlarımız hızlı calısıyor.5 sn.Default
+            //deger verdiğimiz için uyutmak zaman harcatmak zorunda kaldık.
+           // Thread.Sleep(3000);
 
             return _productDal.GetList();
         }
@@ -44,7 +44,6 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
 
         [FluentValidationAspect(typeof(ProductValidator))]
         [CacheRemoveAspect(typeof(MemoryCacheManager))]
-        [LogAspect(typeof(FileLogger))]
         public Product Add(Product product)
         {
             return _productDal.Add(product);

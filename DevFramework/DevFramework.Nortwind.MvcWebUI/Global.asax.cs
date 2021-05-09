@@ -1,9 +1,10 @@
 using DevFramework.Core.Utilities.Mvc.Infrastructure;
 using DevFramework.Northwind.Business.DependencyResolves.Ninject;
+using DevFramework.Nortwind.MvcWebUI;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace DevFramework.Nortwind.MvcWebUI
+namespace DevFramework.Northwind.MvcWebUI
 {
     public class MvcApplication : System.Web.HttpApplication
     {

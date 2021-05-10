@@ -9,7 +9,6 @@ using DevFramework.Northwind.Business.ValidationRules.FluentValidation;
 using DevFramework.Northwind.DataAccess.Abstract;
 using DevFramework.Northwind.Entities.Concrete;
 using System.Collections.Generic;
-using System.Threading;
 
 namespace DevFramework.Northwind.Business.Concrate.Managers
 {
@@ -32,16 +31,16 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         {
             //3 sn. uyutuyoruz öyle devam et dedik.Çunku methodlarımız hızlı calısıyor.5 sn.Default
             //deger verdiğimiz için uyutmak zaman harcatmak zorunda kaldık.
-           // Thread.Sleep(3000);
+            // Thread.Sleep(3000);
 
             return _productDal.GetList();
-        } 
+        }
 
         public Product GetById(int id)
         {
             return _productDal.Get(p => p.ProductId == id);
         }
-         
+
         [FluentValidationAspect(typeof(ProductValidator))]
         [CacheRemoveAspect(typeof(MemoryCacheManager))]
         public Product Add(Product product)

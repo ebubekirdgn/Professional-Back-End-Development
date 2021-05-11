@@ -15,7 +15,6 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
-
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
@@ -35,7 +34,6 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
 
             return _productDal.GetList();
         }
-
         public Product GetById(int id)
         {
             return _productDal.Get(p => p.ProductId == id);

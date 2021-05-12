@@ -2,6 +2,7 @@
 using DevFramework.Northwind.DataAccess.Abstract;
 using DevFramework.Northwind.Entities.ComplexTypes;
 using DevFramework.Northwind.Entities.Concrete;
+using DevFramework.Nortwind.DataAccess.Concrete.EntityFramework;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,7 +10,7 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
-        /*List<ProductDetail> IProductDal.GetProductDetails()
+        List<ProductDetail> IProductDal.GetProductDetails()
         {
             using (NorthwindContext context = new NorthwindContext())
             {
@@ -23,6 +24,11 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
                              };
                 return result.ToList();
             }
-        }*/
+        }
+
+        public List<ProductDetail> GetProductDetails()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

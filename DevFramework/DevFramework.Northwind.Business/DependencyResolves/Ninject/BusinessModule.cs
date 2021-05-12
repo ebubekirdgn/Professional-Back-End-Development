@@ -1,15 +1,17 @@
 ﻿using DevFramework.Core.DataAccess;
 using DevFramework.Core.DataAccess.EntityFramework;
-using DevFramework.Core.DataAccess.NHibernate;
 using DevFramework.Northwind.Business.Abstract;
+using DevFramework.Nortwind.Business.Abstract;
 using DevFramework.Northwind.Business.Concrate.Managers;
-using DevFramework.Northwind.DataAccess.Abstract;
-using DevFramework.Northwind.DataAccess.Concrete.EntityFramework;
-using DevFramework.Northwind.DataAccess.Concrete.NHibernate.Helpers;
+using DevFramework.Nortwind.DataAccess.Abstract;
+using DevFramework.Nortwind.DataAccess.Concrete.EntityFramework;
 using Ninject.Modules;
 using System.Data.Entity;
+using DevFramework.Northwind.DataAccess.Abstract;
+using DevFramework.Northwind.DataAccess.Concrete.EntityFramework;
+using DevFramework.Northwind.Business.Concrete.Managers;
 
-namespace DevFramework.Northwind.Business.DependencyResolves.Ninject
+namespace DevFramework.Nortwind.Business.DependencyResolvers.Ninject
 {
     public class BusinessModule : NinjectModule
     {
@@ -18,10 +20,11 @@ namespace DevFramework.Northwind.Business.DependencyResolves.Ninject
             Bind<IProductService>().To<ProductManager>().InSingletonScope();
             Bind<IProductDal>().To<EfProductDal>();
 
-            //Bu üçü standarttır.
+            Bind<IUserService>().To<UserManager>();
+            Bind<IUserDal>().To<EfUserDal>();
+
             Bind(typeof(IQueryableRepository<>)).To(typeof(EfQueryableRepository<>));
             Bind<DbContext>().To<NorthwindContext>();
-            Bind<NHibernateHelper>().To<SqlServerHelper>();
         }
     }
 }

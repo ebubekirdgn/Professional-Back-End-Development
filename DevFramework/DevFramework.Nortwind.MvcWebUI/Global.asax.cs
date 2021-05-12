@@ -1,7 +1,6 @@
 using DevFramework.Core.CrossCuttingConcerns.Security.Web;
 using DevFramework.Core.Utilities.Mvc.Infrastructure;
-using DevFramework.Northwind.Business.DependencyResolves.Ninject;
-using DevFramework.Nortwind.MvcWebUI;
+using DevFramework.Nortwind.Business.DependencyResolvers.Ninject;
 using System;
 using System.Security.Principal;
 using System.Threading;
@@ -10,7 +9,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 
-namespace DevFramework.Northwind.MvcWebUI
+namespace DevFramework.Nortwind.MvcWebUI
 {
     public class MvcApplication : System.Web.HttpApplication
     {

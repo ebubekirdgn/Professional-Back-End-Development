@@ -9,7 +9,7 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
 {
     public class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
-        List<ProductDetail> IProductDal.GetProductDetails()
+        /*List<ProductDetail> IProductDal.GetProductDetails()
         {
             using (NorthwindContext context = new NorthwindContext())
             {
@@ -23,6 +23,6 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
                              };
                 return result.ToList();
             }
-        }
+        }*/
     }
 }

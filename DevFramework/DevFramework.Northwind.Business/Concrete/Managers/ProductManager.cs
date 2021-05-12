@@ -1,5 +1,6 @@
 ﻿using DevFramework.Core.Aspects.Postsharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp;
+using DevFramework.Core.Aspects.PostSharp.AuthorizationAspects;
 using DevFramework.Core.Aspects.PostSharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp.PerformanceAspects;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
@@ -26,6 +27,7 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         /// <returns></returns>
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
+        [SecuredOperation(Roles ="Admin")]
         public List<Product> GetAll()
         {
             //3 sn. uyutuyoruz öyle devam et dedik.Çunku methodlarımız hızlı calısıyor.5 sn.Default

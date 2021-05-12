@@ -114,6 +114,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aspects\PostSharp\AuthorizationAspects\SecuredOperation.cs" />
     <Compile Include="Aspects\PostSharp\CacheAspects\CacheAspect.cs" />
     <Compile Include="Aspects\PostSharp\CacheAspects\CacheRemoveAspect.cs" />
     <Compile Include="Aspects\PostSharp\ExceptionAspects\ExceptionLogAspect.cs" />
@@ -141,6 +142,7 @@
     <Compile Include="Entities\IEntity.cs" />
     <Compile Include="NhEntityRepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecuredOperation.cs" />
     <Compile Include="Utilities\Mvc\Infrastructure\NinjectControllerFactory.cs" />
   </ItemGroup>
   <ItemGroup>

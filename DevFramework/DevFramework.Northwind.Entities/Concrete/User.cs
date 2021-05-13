@@ -1,4 +1,5 @@
 ﻿using DevFramework.Core.Entities;
+using System.Collections.Generic;
 
 namespace DevFramework.Northwind.Entities.Concrete
 {
@@ -10,6 +11,5 @@ namespace DevFramework.Northwind.Entities.Concrete
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-
     }
 }

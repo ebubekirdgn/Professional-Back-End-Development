@@ -3,6 +3,5 @@
     public class UserRoleItem
     {
         public string RoleName { get; set; }
-
     }
 }

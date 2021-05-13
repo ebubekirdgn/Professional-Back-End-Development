@@ -22,14 +22,14 @@ namespace DevFramework.Nortwind.MvcWebUI.Controllers
             if (user != null)
             {
                 AuthenticationHelper.CreateAuthCookie(
-                new Guid(),
-                user.UserName,
-                user.Email,
-                DateTime.Now.AddDays(15),
-                _userService.GetUserRoles(user).Select(u => u.RoleName).ToArray(),
-                false,
-                user.FirstName,
-                user.LastName);
+                    new Guid(),
+                    user.UserName,
+                    user.Email,
+                    DateTime.Now.AddDays(15),
+                    _userService.GetUserRoles(user).Select(u => u.RoleName).ToArray(),
+                    false,
+                    user.FirstName,
+                    user.LastName);
 
                 return "User is authenticated!";
             }

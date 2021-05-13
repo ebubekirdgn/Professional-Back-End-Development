@@ -4,6 +4,8 @@ using DevFramework.Northwind.Entities.ComplexTypes;
 using DevFramework.Northwind.Entities.Concrete;
 using DevFramework.Nortwind.DataAccess.Abstract;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
 namespace DevFramework.Nortwind.DataAccess.Concrete.EntityFramework
 {

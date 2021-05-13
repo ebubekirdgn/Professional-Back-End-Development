@@ -10,10 +10,6 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework.Mappings
 {
     public class UserMap : EntityTypeConfiguration<User>
     {
-        /// <summary>
-        /// Bunların tamamını aslında Generater kullanarak ordan birçok şeyi yapabilirsiniz.
-        /// Bu yüzden kendinize generator yazmak daha iyi olur.
-        /// </summary>
         public UserMap()
         {
             ToTable(@"Users", @"dbo");

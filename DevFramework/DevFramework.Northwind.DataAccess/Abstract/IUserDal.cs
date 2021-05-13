@@ -7,6 +7,6 @@ namespace DevFramework.Nortwind.DataAccess.Abstract
 {
     public interface IUserDal : IEntityRepository<User>
     {
-        List<UserRole> GetUserRoles(User user);
+        List<UserRoleItem> GetUserRoles(User user);
     }
 }

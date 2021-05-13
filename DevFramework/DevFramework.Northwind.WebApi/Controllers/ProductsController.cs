@@ -1,17 +1,22 @@
-﻿using System;
+﻿using DevFramework.Northwind.Business.Abstract;
+using DevFramework.Northwind.Entities.Concrete;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Web.Http;
 
 namespace DevFramework.Northwind.WebApi.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsController : ApiController
     {
-        // GET: Products
-        public ActionResult Index()
+        private IProductService _productService;
+
+        public ProductsController(IProductService productService)
         {
-            return View();
+            _productService = productService;
+        }
+
+        public List<Product> Get()
+        {
+            return _productService.GetAll();
         }
     }
 }

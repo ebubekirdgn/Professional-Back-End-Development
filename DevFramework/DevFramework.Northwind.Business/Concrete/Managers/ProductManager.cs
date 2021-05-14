@@ -27,7 +27,7 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         /// <returns></returns>
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
-        [SecuredOperation(Roles = "Admin,Editor,Student")]
+       // [SecuredOperation(Roles = "Admin,Editor,Student")]
         public List<Product> GetAll()
         {
             //3 sn. uyutuyoruz öyle devam et dedik.Çunku methodlarımız hızlı calısıyor.5 sn.Default

@@ -9,6 +9,8 @@ namespace DevFramework.Northwind.WebApi.App_Start
     using Ninject.Web.Common.WebHost;
     using System;
     using System.Web;
+    using System.Web.Http;
+    using WebApiContrib.IoC.Ninject;
 
     public static class NinjectWebCommon
     {
@@ -43,6 +45,12 @@ namespace DevFramework.Northwind.WebApi.App_Start
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+                
+                
+                //Burada DI'yi yani ControllerFactory'i Ninject Resolver ile çözeceðimizi uygulamaya söylemiþ olduk
+                //Uygulama baþlayýnca register oluyor burada
+                GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(kernel);
+                
                 RegisterServices(kernel);
                 return kernel;
             }

@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using DevFramework.Northwind.Entities.Concrete;
+﻿using DevFramework.Northwind.Entities.Concrete;
+using System.Collections.Generic;
 
 namespace DevFramework.Nortwind.MvcWebUI.Models
 {

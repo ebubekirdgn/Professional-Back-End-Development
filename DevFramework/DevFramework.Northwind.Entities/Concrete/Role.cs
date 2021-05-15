@@ -1,5 +1,4 @@
 ﻿using DevFramework.Core.Entities;
-using System.Collections.Generic;
 
 namespace DevFramework.Northwind.Entities.Concrete
 {

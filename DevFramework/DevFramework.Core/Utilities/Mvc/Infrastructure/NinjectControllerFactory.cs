@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ninject;
+using Ninject.Modules;
+using System;
 using System.Web.Mvc;
 using System.Web.Routing;
-using Ninject;
-using Ninject.Modules;
 
 namespace DevFramework.Core.Utilities.Mvc.Infrastructure
 {

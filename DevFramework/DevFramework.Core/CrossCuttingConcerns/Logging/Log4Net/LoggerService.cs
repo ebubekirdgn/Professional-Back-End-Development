@@ -3,7 +3,7 @@ using System;
 
 namespace DevFramework.Core.CrossCuttingConcerns.Logging.Log4Net
 {
-     [Serializable]
+    [Serializable]
     public class LoggerService
     {
         private ILog _log;

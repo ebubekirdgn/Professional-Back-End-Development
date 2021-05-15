@@ -1,5 +1,6 @@
 ﻿using DevFramework.Core.Aspects.Postsharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp;
+using DevFramework.Core.Aspects.PostSharp.AuthorizationAspects;
 using DevFramework.Core.Aspects.PostSharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp.PerformanceAspects;
 using DevFramework.Core.Aspects.PostSharp.ValidationAspects;
@@ -24,15 +25,15 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         /// Perfornance Süresini 2 saniyeyi geçmemesi için yazılır.
         /// </summary>
         /// <returns></returns>
+        
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
-        // [SecuredOperation(Roles = "Admin,Editor,Student")]
+        [SecuredOperation(Roles = "Admin,Editor,Student")]
         public List<Product> GetAll()
         {
             //3 sn. uyutuyoruz öyle devam et dedik.Çunku methodlarımız hızlı calısıyor.5 sn.Default
             //deger verdiğimiz için uyutmak zaman harcatmak zorunda kaldık.
             // Thread.Sleep(3000);
-
             return _productDal.GetList();
         }
         public Product GetById(int id)

@@ -3,6 +3,7 @@
 
 namespace DevFramework.Northwind.WebApi.App_Start
 {
+    using DevFramework.Nortwind.Business.DependencyResolvers.Ninject;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
     using Ninject;
     using Ninject.Web.Common;
@@ -46,7 +47,6 @@ namespace DevFramework.Northwind.WebApi.App_Start
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
                 kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
-
                 //Burada DI'yi yani ControllerFactory'i Ninject Resolver ile çözeceðimizi uygulamaya söylemiþ olduk
                 //Uygulama baþlayýnca register oluyor burada
                 GlobalConfiguration.Configuration.DependencyResolver = new NinjectResolver(kernel);
@@ -67,6 +67,7 @@ namespace DevFramework.Northwind.WebApi.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Load(new BusinessModule());
         }
     }
 }

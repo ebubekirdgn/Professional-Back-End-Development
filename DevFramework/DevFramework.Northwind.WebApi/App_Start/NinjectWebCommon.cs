@@ -3,6 +3,8 @@
 
 namespace DevFramework.Northwind.WebApi.App_Start
 {
+    using DevFramework.Northwind.Business.DependencyResolvers.Ninject;
+    using DevFramework.Northwind.Business.DependencyResolves.Ninject;
     using DevFramework.Nortwind.Business.DependencyResolvers.Ninject;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
     using Ninject;
@@ -67,7 +69,7 @@ namespace DevFramework.Northwind.WebApi.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Load(new BusinessModule());
+            kernel.Load(new BusinessModule(), new AutoMapperModule());
         }
     }
 }

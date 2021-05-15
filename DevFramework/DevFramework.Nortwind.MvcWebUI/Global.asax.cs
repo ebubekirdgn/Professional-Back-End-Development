@@ -1,5 +1,6 @@
 using DevFramework.Core.CrossCuttingConcerns.Security.Web;
 using DevFramework.Core.Utilities.Mvc.Infrastructure;
+using DevFramework.Northwind.Business.DependencyResolvers.Ninject;
 using DevFramework.Nortwind.Business.DependencyResolvers.Ninject;
 using System;
 using System.Security.Principal;
@@ -17,7 +18,7 @@ namespace DevFramework.Nortwind.MvcWebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule()));
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule(),new AutoMapperModule()));
         }
 
         public override void Init()

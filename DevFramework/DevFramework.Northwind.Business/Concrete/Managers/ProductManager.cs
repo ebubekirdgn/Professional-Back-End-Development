@@ -1,4 +1,5 @@
-﻿using DevFramework.Core.Aspects.Postsharp.CacheAspects;
+﻿using AutoMapper;
+using DevFramework.Core.Aspects.Postsharp.CacheAspects;
 using DevFramework.Core.Aspects.PostSharp;
 using DevFramework.Core.Aspects.PostSharp.AuthorizationAspects;
 using DevFramework.Core.Aspects.PostSharp.CacheAspects;
@@ -10,43 +11,25 @@ using DevFramework.Northwind.Business.ValidationRules.FluentValidation;
 using DevFramework.Northwind.DataAccess.Abstract;
 using DevFramework.Northwind.Entities.Concrete;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace DevFramework.Northwind.Business.Concrate.Managers
+namespace DevFramework.Northwind.Business.Concrete.Managers
 {
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
-        public ProductManager(IProductDal productDal)
+        private IMapper _mapper;
+
+        public IProductDal Object { get; }
+
+        public ProductManager(IProductDal productDal, IMapper mapper)
         {
             _productDal = productDal;
+            _mapper = mapper;
         }
 
-        /// <summary>
-        /// Perfornance Süresini 2 saniyeyi geçmemesi için yazılır.
-        /// </summary>
-        /// <returns></returns>
-        
-        [CacheAspect(typeof(MemoryCacheManager))]
-        [PerformanceCounterAspect(2)]
-        //[SecuredOperation(Roles = "Admin,Editor,Student")]
-        public List<Product> GetAll()
+        public ProductManager(IProductDal @object)
         {
-            //3 sn. uyutuyoruz öyle devam et dedik.Çunku methodlarımız hızlı calısıyor.5 sn.Default
-            //deger verdiğimiz için uyutmak zaman harcatmak zorunda kaldık.
-            // Thread.Sleep(3000);
-            return _productDal.GetList().Select(p => new Product
-            {
-                CategoryId = p.CategoryId,
-                ProductId = p.ProductId,
-                ProductName = p.ProductName,
-                QuantityPerUnit = p.QuantityPerUnit,
-                UnitPrice = p.UnitPrice
-            }).ToList();
-        }
-        public Product GetById(int id)
-        {
-            return _productDal.Get(p => p.ProductId == id);
+            Object = @object;
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
@@ -54,6 +37,20 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         public Product Add(Product product)
         {
             return _productDal.Add(product);
+        }
+
+        [CacheAspect(typeof(MemoryCacheManager))]
+        [PerformanceCounterAspect(2)]
+        //[SecuredOperation(Roles = "Admin,Editor,Student")]
+        public List<Product> GetAll()
+        {
+            var products = _mapper.Map<List<Product>>(_productDal.GetList());
+            return products;
+        }
+
+        public Product GetById(int id)
+        {
+            return _productDal.Get(p => p.ProductId == id);
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
@@ -67,7 +64,6 @@ namespace DevFramework.Northwind.Business.Concrate.Managers
         public void TransactionalOperation(Product product1, Product product2)
         {
             _productDal.Add(product1);
-            //  Business Codes
             _productDal.Update(product2);
         }
     }

@@ -1,4 +1,4 @@
-﻿using DevFramework.Northwind.Business.Concrate.Managers;
+﻿using DevFramework.Northwind.Business.Concrete.Managers;
 using DevFramework.Northwind.DataAccess.Abstract;
 using DevFramework.Northwind.Entities.Concrete;
 using FluentValidation;
@@ -16,6 +16,7 @@ namespace DevFramework.Northwind.Business.Tests
         {
             Mock<IProductDal> mock = new Mock<IProductDal>();
             ProductManager productManager = new ProductManager(mock.Object);
+
             productManager.Add(new Product());
         }
     }

@@ -62,6 +62,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="DependecyResolver\InstanceFactory.cs" />
     <Compile Include="DependecyResolver\Ninject\BusinessModule.cs" />
     <Compile Include="DependecyResolver\Ninject\ValidationModule.cs" />
     <Compile Include="ServiceAdapters\IKpsService.cs" />

@@ -23,16 +23,25 @@ namespace MemberRegistration.Business.Concrete
         [FluentValidationAspect(typeof(MemberValidator))]
         public void Add(Member member)
         {
-            if (_memberDal.Get(m => m.TcIdentityNo == member.TcIdentityNo) != null)
-            {
-                throw new Exception("Bu kullanıcı daha önce kayıt olmuştur.");
-            }
+            CheckIfMemberExists(member);
+            CheckIfMemberExists(member);
+            _memberDal.Add(member);
+        }
 
+        private void CheckIfMemberExists(Member member)
+        {
             if (_kpsService.ValidateUser(member) == false)
             {
                 throw new Exception("Kullanıcı doğrulaması geçerli değil.");
             }
-            _memberDal.Add(member);
+        }
+
+        private void CheckIfUserValidFromKps(Member member)
+        {
+            if (_memberDal.Get(m => m.TcIdentityNo == member.TcIdentityNo) != null)
+            {
+                throw new Exception("Bu kullanıcı daha önce kayıt olmuştur.");
+            }
         }
     }
 }

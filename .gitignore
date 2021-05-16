@@ -8,6 +8,9 @@
 *.s$?
 *.l$?
 
+# dependencies
+/node_modules
+
 *.suo
 *.user
 _ReSharper.*

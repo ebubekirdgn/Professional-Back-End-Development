@@ -23,6 +23,11 @@ namespace MemberRegistration.Business.Concrete
         [FluentValidationAspect(typeof(MemberValidator))]
         public void Add(Member member)
         {
+            if (_memberDal.Get(m => m.TcIdentityNo == member.TcIdentityNo) != null)
+            {
+                throw new Exception("Bu kullanıcı daha önce kayıt olmuştur.");
+            }
+
             if (_kpsService.ValidateUser(member) == false)
             {
                 throw new Exception("Kullanıcı doğrulaması geçerli değil.");

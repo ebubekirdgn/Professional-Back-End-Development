@@ -63,6 +63,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="DependecyResolver\Ninject\BusinessModule.cs" />
+    <Compile Include="DependecyResolver\Ninject\ValidationModule.cs" />
     <Compile Include="ServiceAdapters\IKpsService.cs" />
     <Compile Include="ServiceAdapters\KpsServiceAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

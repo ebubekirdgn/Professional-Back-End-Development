@@ -48,6 +48,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -242,6 +245,14 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DevFramework.Core\DevFramework.Core.csproj">
+      <Project>{666B60B3-5E80-4FA2-8229-B44CAACDCC24}</Project>
+      <Name>DevFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemberRegistration.Business\MemberRegistration.Business.csproj">
+      <Project>{AD877052-8E32-41C6-87E0-397AA3738992}</Project>
+      <Name>MemberRegistration.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MemberRegistration.Entities\MemberRegistration.Entities.csproj">
       <Project>{24BA330B-C085-4C46-B8D1-BB1C56F74F8F}</Project>
       <Name>MemberRegistration.Entities</Name>

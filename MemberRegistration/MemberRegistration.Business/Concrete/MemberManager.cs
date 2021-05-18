@@ -24,7 +24,7 @@ namespace MemberRegistration.Business.Concrete
         public void Add(Member member)
         {
             CheckIfMemberExists(member);
-            CheckIfMemberExists(member);
+            CheckIfUserValidFromKps(member);
             _memberDal.Add(member);
         }
 

@@ -15,7 +15,7 @@ namespace MemberRegistration.MvcWebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule));
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory(new BusinessModule()));
         }
     }
 }

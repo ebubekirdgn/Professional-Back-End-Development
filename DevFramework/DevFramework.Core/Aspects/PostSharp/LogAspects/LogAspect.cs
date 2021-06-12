@@ -9,7 +9,7 @@ using System.Reflection;
 namespace DevFramework.Core.Aspects.PostSharp.LogAspects
 {
     [Serializable]
-    //Bu kod sadece : nesne instanceslerinin örneklerinin methodlarına uygula hiçbir şekilde ctor'a uygulama
+    //Bu kod sadece : nesne instanceslerinin örneklerinin methodlarına uygula, hiçbir şekilde ctor'a uygulama
     [MulticastAttributeUsage(MulticastTargets.Method, TargetMemberAttributes = MulticastAttributes.Instance)]
     public class LogAspect : OnMethodBoundaryAspect
     {

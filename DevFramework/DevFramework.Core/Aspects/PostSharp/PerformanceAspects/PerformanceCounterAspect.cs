@@ -38,7 +38,6 @@ namespace DevFramework.Core.Aspects.PostSharp.PerformanceAspects
             _stopwatch.Stop();
             if (_stopwatch.Elapsed.TotalSeconds > _interval)
             {
-
                 /// burada istersek kendimize mail attırabiliriz ne istersek artık bu scope'a yazacagız
                 Debug.WriteLine("Performance: {0}.{1}->>{2}", args.Method.DeclaringType.FullName, args.Method.DeclaringType.Name, _stopwatch.Elapsed.TotalSeconds);
             }
